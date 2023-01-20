@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+    background-color: #0f0c29;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #302b63;
+}
+
+/*  ==================================
+            ESTILOS GENERALES
+    ==================================
+*/
+
+.width-height{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==================================
+            BOTON DE OPCIONES
+    =================================
+*/
+
+.options{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ==================================
+            BOTON COMPARTIR
+   ==================================
+*/
+
+.share{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ==================================
+            MENU
+   ==================================
+*/
+
+.sticky{
+    display: none;
+}
+
+.logo-sticky{
+    display: none;
+}
+
+.share-sticky{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.sticky-show{
+    width: calc(100% - 12px);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid rgb(235, 238, 241);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background 100ms ease 0s, -webkit-transform 100ms ease 0s, -webkit-backdrop-filter 1ms ease 0s;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    margin-top: 1rem;
+}
+
+.person{
+    font-weight: 900;
+    margin-top: .2rem;
+}
+
+.logo-sticky{
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* ==================================
+                HEADER
+   ==================================
+*/
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.logo-picture{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.title{
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.ocupations{
+    color: #fff;
+    font-weight: 200;
+    margin-top: .2rem;
+}
+
+/* ==================================
+            Redes Sociais
+   ==================================
+*/
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.fa-brands{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* ==================================
+          BOTONES DE INTERES
+   ==================================
+*/
+
+.buttons-interest{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.link-buttons{
+    text-decoration: none;
+    color: #fff;
+    width: 80%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    transition: background .5s;
+}
+
+.link-buttons:hover{
+    background: #fff;
+    color: #000;
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    
+    backdrop-filter: blur(5px);
+}
+
+.derechos{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-autor{
+    color: #14a1f0;
+    text-decoration: none;
+}
+
+/* ==================================
+            RESPONSIVE
+   ==================================
+*/
+@media screen and (max-width: 800px) {
+    .logo-picture{
+        width: 150px;
+    }
+
+    .link-buttons{
+        height: 65px;
+    }
+
+}
